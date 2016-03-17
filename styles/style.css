@@ -1,0 +1,289 @@
+/* Global */
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    color: #333;
+    }
+
+h1,
+h2,
+h3 {
+    font-family: 'Meddon', cursive;
+    margin: 0;
+}
+
+
+
+/* HEADER */
+
+.logo-tagline {
+    width: 100%;
+    padding-top: 10px; 
+    text-align: center;
+}
+.venue-name {
+    display: inline-block;
+    color: #30664B;
+    font-size: 24px
+}
+
+.tagline {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .venue-name {
+        font-size: 28px;
+    }
+    
+    .tagline {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+   .venue-name {
+        font-size: 32px;
+    }
+    
+    .tagline {
+        font-size: 15px;
+    }  
+}
+
+
+
+/* SERVICES  & ABOUT US */
+
+.hero-image {
+    background-image: url(../assets/images/venue-hero-1440.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 0%;
+    height: 500px;
+    
+}
+
+.services-image {
+    background-image: url(../assets/images/venue-service.png);
+    background-repeat: no-repeat;
+    background-position: 60% 80%;
+    background-size: cover;
+    height: 400px;
+}
+
+.about-image {
+    background-image: url(../assets/images/venue-about.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 400px;
+}
+
+.contact-image {
+    background-image: url(../assets/images/venue-contact.png);
+    background-repeat: no-repeat;
+    background-position: 40% 80%;
+    background-size: cover;
+    height: 400px;
+}
+
+.text-chunk {
+    position: relative;
+    background-color: #fff;
+    text-align: left;
+    font-size: 12px;
+    line-height: 19px;
+    text-indent: 25px;
+    padding: 15px 15px 30px;
+}
+
+.content h2 {
+    text-align: center;
+    margin-top: 15px
+}
+
+
+
+@media (min-width: 768px) {
+    .hero-image {
+        background-position: center;
+        height: 600px
+    }
+    
+    .about-image,
+    .contact-image,
+    .services-image {
+        height: 500px;
+    }
+    
+    
+    .text-chunk {
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-image {
+        background-position: 50% 80%;
+        height: 630px;
+    }
+    
+    .text-chunk {
+        font-size: 21px;
+        line-height: 31px;
+    }
+}
+
+ @media (min-width: 1440px) {
+     .hero-image {
+        background-position: center center;
+         background-size: cover;
+        height: 800px
+    }
+     
+     .text-chunk {
+         max-width: 1140px;
+         margin: auto;
+     }  
+}
+
+/* CONTACT US */
+
+.contact {
+    margin-bottom: 30px;
+}
+
+.contact-us-text {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 19px;
+    text-indent: 25px;
+    padding: 0 15px;
+}
+
+.contact-form {
+    width: 80%;
+    margin: auto;
+    
+}
+
+input {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #979797;
+    border-radius: 2px;
+    
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+    resize: none;
+    outline: none;
+    border: 1px solid #979797;
+    border-radius: 2px;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #30664B;    
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #30664B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: hsl(150, 36%, 50%);
+}
+
+@media (min-width: 768px) {
+    
+    .contact-us-text {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    
+    
+    .left {
+        display: inline-block;
+        position: relative;
+        top: -16px;
+        width: 49%;
+        margin-right: 5px;
+    }
+    
+    input {
+        font-size: 17px;
+        height: 43px;
+    }
+    
+    .right {
+        display: inline-block;
+        width: 49%;
+    }
+    
+    textarea {
+        font-size: 17px;
+    }
+    
+    .full {
+        display: block;
+    }
+
+}
+
+@media (min-width: 992px) {
+        
+    .contact-us-text {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    
+    .left {
+        margin-right: 10px;
+    }
+}
+
+ @media (min-width: 1440px) {
+     
+     .contact-us-text {
+         max-width: 1140px;
+         margin: auto;
+     }  
+     
+     .contact-form {
+         max-width: 1140px;
+     }
+     }
+}
